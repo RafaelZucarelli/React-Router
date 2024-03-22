@@ -1,0 +1,19 @@
+{
+    "products": [
+      {
+        "id": "f05d",
+        "name": "Mouse",
+        "price": "60.00"
+      },
+      {
+        "id": "8f1f",
+        "name": "Fone",
+        "price": "30.00"
+      },
+      {
+        "id": "5878",
+        "name": "Monitor",
+        "price": "120.00"
+      } 
+    ]
+  }
