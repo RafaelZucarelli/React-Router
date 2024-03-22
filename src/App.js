@@ -17,6 +17,7 @@ function App() {
       
       <h1>React Router</h1>
       <BrowserRouter>
+      {/*links com react router */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
