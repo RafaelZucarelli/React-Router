@@ -9,10 +9,12 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Product from './pages/Product';
 import Info from "./pages/Info";
-import NotFound from './components/NotFound';
+import NotFound from './pages/NotFound';
+import Search from "./pages/Search";
 
 //components
 import Navbar from './components/Navbar';
+import { SearchForm } from './components/SearchForm';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
       <BrowserRouter>
       {/*links com react router */}
         <Navbar />
+        {/*Search Form */}
+        <SearchForm />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -30,6 +34,8 @@ function App() {
           <Route path="/products/:id/info" element={<Info />} />
           {/*Rota dinâmica */}
           <Route path="/products/:id" element={<Product />} />
+          <Route path="/search" element={<Search />} />
+          {/*No match route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
